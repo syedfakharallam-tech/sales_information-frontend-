@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>Sale</title>
+        <style>
+            p {
+                padding: 5px;
+                background-color: rgba(11, 18, 48, 0.5);
+                border-radius: 15px;
+                width:700px;
+                text-align: center;
+                margin: 5px;
+            }
+            body {
+                background-color: rgb(164, 158, 215);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+            }
+            form{
+                background-color: #0f1724;
+                padding: 20px 15px;
+                margin: 50px;
+                border-radius: 15px;;
+            }
+            h3 {
+                color: white;
+                text-align: center
+            }
+            #button{
+                background-color:#7c3aed; 
+                color: white; 
+                padding: 7px 17px; 
+                border-radius: 15px; 
+                font-size: 16px; 
+                cursor: pointer;
+                border: none;
+            }
+            #button:focus{
+                outline: none;
+                color: gray;
+                padding: 6px 16px;
+            }
+            input[name="si"]{
+                background-color: #7c3aed;
+                color: white;
+                border-radius: 10px;
+                padding: 0px 5px;
+                cursor: pointer;
+                
+            }
+            input[name="si"]:focus{
+                outline: none;
+                color: gray
+
+            }
+            input[name="si"]:hover{
+                padding: 1px 6px;
+            }
+            span{
+                display:block; 
+                padding: 5px;
+            }
+            input{
+                border-radius: 12px;
+                color: white;
+                font-size:14px;
+                background-color: rgba(11, 18, 48, 0.5);
+                padding: 8px 0px;
+                border: 2px dotted #7c3aed
+            }
+            input:focus{
+                border: 2px solid red;
+                outline: none;
+
+            }
+            #box{
+                width:300px;
+                padding: 10px;
+                border: 2px solid #7c3aed;
+
+            }
+            select{
+                background-color: 7c3aed;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+            }
+            textarea{
+                background-color: rgb(164, 158, 215);
+                color: black;
+                border: 2px dotted #7c3aed;
+                border-radius: 15px;
+                padding: 6px;
+                
+            }
+            textarea:hover{
+                padding: 7px;
+            }
+            textarea:focus{
+                border:2px solid red;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>
+                Sale No <input name="f1" type="text" size="15">
+                <select name="s1">
+                    <option>24-2-2021</option>
+                    <option>25-2-2021</option>
+                    <option>26-2-2021</option>
+                    <option>27-2-2021</option>
+                    <option>28-2-2021</option>
+                </select>
+                Find <input name="f2" size="5">
+                Sale Key <input name="f3" type="text" size="22">
+            </p>
+            <p>
+                Customer <input name="f4" type="text" size="39">
+                Ledger no <input name="f5" type="text" size="3">
+                Ledger key <input name="f6" type="text" size="5">
+            </p>
+            <p>
+                Remarks <input name="f7" type="text" size="40">
+                Stock Ledger Key <input name="f8" type="text" size="14">
+            </p>
+            <p id="box">
+                <span style="font-size: 20px; font-weight: bold;">Product</span>
+                Product <input name="f9" type="text" size="25"><br>
+                <span>
+                    Item Qty <input name="f10" type="text" size="7">
+                    Amount <input name="f11" type="text" size="6">
+                </span><br>
+                <button id="button">Add</button>
+
+            </p>
+
+            <p id="box">
+                <span style="font-size: 20px; font-weight: bold;">Sales
+                    Information</span>
+                <textarea name="t1" rows="5" cols="33"></textarea>
+                <br>
+                <span>
+                    <input name="si" type="submit" value="Save">
+                    <input name="si" type="submit" value="Delete">
+                    <input name="si" type="submit" value="Refresh">
+                    <input name="si" type="submit" value="Print">
+                    <input name="si" type="submit" value="Close">
+                </span>
+            </p>
+        </form>
+    </body>
+</html>
